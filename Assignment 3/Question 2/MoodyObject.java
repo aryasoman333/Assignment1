@@ -1,5 +1,4 @@
 package com.aed.assignment.day3;
-
 /**
  * @author Arya Soman
  */
