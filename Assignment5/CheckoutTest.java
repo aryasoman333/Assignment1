@@ -12,9 +12,9 @@ class CheckoutTest {
 	void testNumberOfItems() 
 	{
 		//arrange
-	    checkout.enterItem(new Candy("Chocolate Fudge", 1.15, 256));
-	    checkout.enterItem(new Sundae("Mango Ice Cream", 122, "Choco balls", 20));
-	    int expectedNumberOfItems = 2;
+	    	checkout.enterItem(new Candy("Chocolate Fudge", 1.15, 256));
+	    	checkout.enterItem(new Sundae("Mango Ice Cream", 122, "Choco balls", 20));
+	    	int expectedNumberOfItems = 2;
 						
 		//act
 		int actualNumberOfItems = checkout.numberOfItems();
@@ -27,9 +27,9 @@ class CheckoutTest {
 	void testEnterItem() 
 	{
 		checkout.enterItem(new Candy("Chocolate Fudge", 1.15, 256));
-	    checkout.enterItem(new Sundae("Mango Ice Cream", 122, "Choco balls", 20));
+	    	checkout.enterItem(new Sundae("Mango Ice Cream", 122, "Choco balls", 20));
 	    
-	    boolean expectedResult = false;
+	    	boolean expectedResult = false;
 						
 		//act
 		boolean actualResult = checkout.vector.isEmpty();
@@ -42,9 +42,9 @@ class CheckoutTest {
 	void testClear() 
 	{
 		checkout.enterItem(new Candy("Chocolate Fudge", 1.15, 256));
-	    checkout.enterItem(new Sundae("Mango Ice Cream", 122, "Choco balls", 20));
-	    checkout.clear();
-	    boolean expectedResult = true;
+	    	checkout.enterItem(new Sundae("Mango Ice Cream", 122, "Choco balls", 20));
+	    	checkout.clear();
+	    	boolean expectedResult = true;
 						
 		//act
 		boolean actualResult = checkout.vector.isEmpty();
@@ -58,8 +58,8 @@ class CheckoutTest {
 	{
 		//arrange
 		checkout.enterItem(new Candy("Chocolate Fudge", 1.15, 256));
-	    checkout.enterItem(new Sundae("Mango Ice Cream", 122, "Choco balls", 20));
-	    int expectedTotalCost = 436;
+	    	checkout.enterItem(new Sundae("Mango Ice Cream", 122, "Choco balls", 20));
+	    	int expectedTotalCost = 436;
 						
 		//act
 		int actualTotalCost = checkout.totalCost();
@@ -73,8 +73,8 @@ class CheckoutTest {
 	{
 		//arrange
 		checkout.enterItem(new Candy("Chocolate Fudge", 1.15, 256));
-	    checkout.enterItem(new Sundae("Mango Ice Cream", 122, "Choco balls", 20));
-	    int expectedTotalTax = 28;
+	    	checkout.enterItem(new Sundae("Mango Ice Cream", 122, "Choco balls", 20));
+	    	int expectedTotalTax = 28;
 						
 		//act
 		int actualTotalTax = checkout.totalTax();
@@ -88,8 +88,8 @@ class CheckoutTest {
 	{
 		//arrange
 		checkout.enterItem(new Candy("Chocolate Fudge", 1.15, 256));
-	    checkout.enterItem(new Sundae("Mango Ice Cream", 122, "Choco balls", 20));
-	    boolean expectedFinalBill = false;
+	    	checkout.enterItem(new Sundae("Mango Ice Cream", 122, "Choco balls", 20));
+	    	boolean expectedFinalBill = false;
 						
 		//act
 		boolean actualFinalBill = checkout.toString().isEmpty();
