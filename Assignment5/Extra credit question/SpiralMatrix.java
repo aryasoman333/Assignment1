@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.aed.assignment.day5;
 
 import java.util.ArrayList;
