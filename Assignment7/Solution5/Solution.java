@@ -1,5 +1,7 @@
 package com.aed.assignment.day7.Solution5;
 
+// 2/2
+// total: 10/10
 public class Solution 
 {
 	public double findMedianSortedArrays(int[] nums1, int[] nums2) 
